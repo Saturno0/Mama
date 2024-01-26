@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+
+body {
+  background-color: lightpink;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.top_div{
+  border: 2px solid  #55325b;
+  background-color: rgb(179, 97, 179);
+  padding: 10px 30px;
+  width: auto;
+  display: flex;
+  justify-content:space-evenly;
+  border-radius: 15px;
+}
+
+
+.top_button {
+  border-radius: 25px;
+  padding: 20px 20px;
+  font-size: 1.40em;
+  border: 2px solid black;
+}
+
+button:hover {
+  border-color:#747bff;
+}
+
+
+.container {
+  margin-top: 35px;
+  border: 5px solid lightcoral;
+  border-radius: 30px;
+  min-height: 30vh;
+  background-color: white;
+}
+
+h1{
+  text-decoration: underline;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.main {
+  font-size: 1.2em;
+  font-size: 1.2em;
+  display: grid;
+  min-height: 50vh;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.heart{
+  --size: 200px;
+  --color: red;
+  transform:rotate(45deg);
+  animation:beat 1s infinite alternate ease-in-out;
+}
+@keyframes beat{
+  to{
+    transform: rotate(45deg) scale(1.05);
+  }
+}
+
+.heart,
+.heart::before,
+.heart::after{
+    width: var(--size);
+    height: var(--size);
+    background:var(--color);
+}
+.heart::before,
+.heart::after{
+  content:'';
+  display: block;
+  border-radius:50%;
+}
+.heart::before{
+  margin-top: calc(var(--size)*-.5);
+}
+.heart::after{
+  margin-top: calc(var(--size)* -0.5);
+  margin-left: calc(var(--size)* -0.5);
+}
+
+.text {
+  margin: 25px;
+  line-height: 30px;
+  text-align: justify;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.separator {
+  margin-right: 100px;
+}
+
+.container_list {
+  margin: 30px;
+  border: 5px solid violet;
+  border-radius: 30px;
+  min-height: 10vh;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  margin: 0;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
