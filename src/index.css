@@ -8,7 +8,7 @@
 
 
 body {
-  background-color: lightpink;
+  background-color: url("\public/fondo_mama.jpg");
   margin: 0;
   padding: 0;
   height: 100%;
