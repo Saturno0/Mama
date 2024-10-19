@@ -8,7 +8,9 @@
 
 
 body {
-  background-color: url("\public/fondo_mama.jpg");
+  background-image: url("/public/fondo_mama.jpg");
+  background-position: center;
+  background-size: cover;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -30,10 +32,21 @@ body {
   padding: 20px 20px;
   font-size: 1.40em;
   border: 2px solid black;
+  text-decoration: none;
 }
 
+.reason_btn {
+  border-radius: 25px;
+  padding: 20px 20px;
+  border: 2px solid black;
+  text-decoration: none;
+  text-decoration: #a02ba4;
+  margin: 15px;
+}
+
+
 button:hover {
-  border-color:#747bff;
+  border-color:#a523b7;
 }
 
 

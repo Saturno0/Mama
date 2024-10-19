@@ -61,8 +61,8 @@ function Good_rsns() {
     return (
         <div>
             <div className='top_div'>
-                <button className='top_button'><Link to="/Reasons" >Razones</Link></button>
-                <button className='top_button'><Link to="/" >Mensaje</Link></button>
+                <Link to="/Reasons" ><button className='top_button'>Razones</button></Link>
+                <Link to="/" ><button className='top_button'>Mensaje</button></Link>
             </div>
             {razones.map(r => (
                 <div className='container_list' key={r.id}>
